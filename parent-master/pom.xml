@@ -951,15 +951,13 @@
     
     
     <!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
-<dependency>
+
+    <dependency>
 <groupId>org.sonarsource.scanner.maven</groupId>
 <artifactId>sonar-maven-plugin</artifactId>
 <version>3.2</version>
 </dependency>
-
-Followed by the profile
-
-<profiles>
+ <profiles>
 <profile>
 <id>sonar</id>
 <activation>
@@ -967,9 +965,7 @@ Followed by the profile
 </activation>
 <properties>
 <!-- Optional URL to server. Default value is http://localhost:9000 -->
-<sonar.host.url>
-http://52.40.243.185:9000
-</sonar.host.url>
+<sonar.host.url>http://52.40.243.185:9000</sonar.host.url>
 </properties>
 </profile>
 </profiles>
